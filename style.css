@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+}
+
+.hero-section {
+    padding-bottom: 112px;
+    padding-top: 72px;
+    height: 100vh;
+}
+
+.container {
+    max-width: 980px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.left-content {
+    flex: 1;
+    min-width: 280px;
+    margin-bottom: auto;
+}
+
+.image-section {
+    padding: 112px 0 16px;
+}
+
+.left-content img {
+    height: 80px;
+    height: 106px;
+    margin: -28px;
+}
+
+.left-content h2 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 500px;
+    padding: 0 0 20px;
+}
+
+.login-box {
+    background: #fff;
+    padding: 15px 15px 24px;
+    width: 396px;
+    height: 350px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin: 40px 0 0;
+}
+
+.login-box form input[type="email"],
+.login-box form input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    font-size: 17px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px 16px;
+    background: #1877f2;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.login-box a {
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    border-bottom: 1px solid #dadde1;
+    margin: 25px 0;
+}
+
+.create-btn {
+    background: #42b72a;
+    color: white;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.page-link {
+    text-align: center;
+    margin-top: 55px;
+    font-size: 14px;
+    color: #1c1e21;
+}
+
+.page-link a {
+    color: black;
+    text-decoration: none;
+}
+
+.page-link a:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .left-content {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .left-content h2 {
+        font-size: 24px;
+        line-height: 28px;
+        width: auto;
+        padding: 0 10px;
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 396px;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .create-btn {
+        width: 100%;
+    }
+
+    .page-link {
+        font-size: 13px;
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+}
